@@ -1,0 +1,10 @@
+[
+  {
+    "op": "add",
+    "path": "/variables/0/enumerations/-",
+    "value": {
+      "code": "DATASET",
+      "label": "DATASET_LABEL"
+    }
+  }
+]

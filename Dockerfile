@@ -1,0 +1,22 @@
+FROM hbpmip/mip-cde-meta-db-setup:1.3.1
+MAINTAINER Ludovic Claude <ludovic.claude@chuv.ch>
+
+ARG BUILD_DATE
+ARG VCS_REF
+ARG VERSION
+
+COPY mip.patch.json /src/patches/DATASET.patch.json
+ENV HIERARCHY_PATCHES="mip-cde|DATASET|MIP_LOCAL_FEATURES|dataset,gender,agegroup,alzheimerbroadcategory"
+
+LABEL org.label-schema.build-date=$BUILD_DATE \
+      org.label-schema.name="registry.gitlab.com/hbpmip_private/DATASET-meta-db-setup" \
+      org.label-schema.description="Meta database setup with DATASET variables" \
+      org.label-schema.url="https://gitlab.com/hbpmip_private/DATASET-meta-db-setup" \
+      org.label-schema.vcs-type="git" \
+      org.label-schema.vcs-url="git@gitlab.com:hbpmip_private/DATASET-meta-db-setup" \
+      org.label-schema.vcs-ref=$VCS_REF \
+      org.label-schema.version="$VERSION" \
+      org.label-schema.vendor="LREN CHUV" \
+      org.label-schema.license="Proprietary - confidential information" \
+      org.label-schema.docker.dockerfile="Dockerfile" \
+      org.label-schema.schema-version="1.0"

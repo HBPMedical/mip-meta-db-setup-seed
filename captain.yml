@@ -1,0 +1,9 @@
+target_image:
+  build: Dockerfile
+  image: registry.gitlab.com/hbpmip_private/DATASET-meta-db-setup
+  pre:
+    - echo "Building registry.gitlab.com/hbpmip_private/DATASET-meta-db-setup image"
+  post:
+    - echo "Finished building registry.gitlab.com/hbpmip_private/DATASET-meta-db-setup image"
+  test:
+    - ./tests/test.sh
