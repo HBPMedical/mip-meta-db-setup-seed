@@ -1,5 +1,5 @@
 [![CHUV](https://img.shields.io/badge/CHUV-LREN-AF4C64.svg)](https://www.unil.ch/lren/en/home.html) [![License](https://img.shields.io/badge/license-proprietary-AF4C64.svg)](https://github.com/LREN-CHUV/DATASET-data-db-setup/blob/master/LICENSE)
-[![build status](https://gitlab.com/hbpmip/DATASET-data-db-setup/badges/master/build.svg)](https://gitlab.com/hbpmip/DATASET-data-db-setup/commits/master)
+[![build status](https://gitlab.com/hbpmip/DATASET-meta-db-setup/badges/master/build.svg)](https://gitlab.com/hbpmip/DATASET-meta-db-setup/commits/master)
 
 # DATASET_LABEL meta database setup
 
