@@ -10,7 +10,7 @@ ENV HIERARCHY_PATCHES="mip-cde|DATASET|MIP_LOCAL_FEATURES|dataset,gender,agegrou
 
 LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.name="registry.gitlab.com/hbpmip_private/DATASET-meta-db-setup" \
-      org.label-schema.description="Meta database setup with DATASET variables" \
+      org.label-schema.description="Meta database setup with DATASET_LABEL variables" \
       org.label-schema.url="https://gitlab.com/hbpmip_private/DATASET-meta-db-setup" \
       org.label-schema.vcs-type="git" \
       org.label-schema.vcs-url="git@gitlab.com:hbpmip_private/DATASET-meta-db-setup" \
