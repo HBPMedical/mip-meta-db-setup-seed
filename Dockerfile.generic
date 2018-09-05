@@ -1,0 +1,22 @@
+FROM hbpmip/meta-db-setup:2.4.1
+MAINTAINER Ludovic Claude <ludovic.claude@chuv.ch>
+
+ARG BUILD_DATE
+ARG VCS_REF
+ARG VERSION
+
+COPY variables.json /src/variables/DATASET.json
+ENV TAXONOMIES="DATASET|DATASET|DATASET|"
+
+LABEL org.label-schema.build-date=$BUILD_DATE \
+      org.label-schema.name="registry.gitlab.com/hbpmip_private/DATASET-meta-db-setup" \
+      org.label-schema.description="Meta database setup with DATASET_LABEL variables" \
+      org.label-schema.url="https://gitlab.com/hbpmip_private/DATASET-meta-db-setup" \
+      org.label-schema.vcs-type="git" \
+      org.label-schema.vcs-url="git@gitlab.com:hbpmip_private/DATASET-meta-db-setup" \
+      org.label-schema.vcs-ref=$VCS_REF \
+      org.label-schema.version="$VERSION" \
+      org.label-schema.vendor="LREN CHUV" \
+      org.label-schema.license="Proprietary - confidential information" \
+      org.label-schema.docker.dockerfile="Dockerfile" \
+      org.label-schema.schema-version="1.0"

@@ -1,4 +1,4 @@
-FROM hbpmip/mip-cde-meta-db-setup:1.3.1
+FROM hbpmip/mip-cde-meta-db-setup:1.3.3
 MAINTAINER Ludovic Claude <ludovic.claude@chuv.ch>
 
 ARG BUILD_DATE
@@ -6,7 +6,7 @@ ARG VCS_REF
 ARG VERSION
 
 COPY mip.patch.json /src/patches/DATASET.patch.json
-ENV HIERARCHY_PATCHES="mip-cde|DATASET|MIP_LOCAL_FEATURES|dataset,gender,agegroup,alzheimerbroadcategory"
+ENV TAXONOMY_PATCHES="mip-cde|DATASET|MIP_LOCAL_FEATURES|dataset,gender,agegroup,alzheimerbroadcategory"
 
 LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.name="registry.gitlab.com/hbpmip_private/DATASET-meta-db-setup" \
