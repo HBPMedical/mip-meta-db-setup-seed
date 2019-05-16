@@ -3,7 +3,7 @@ version: '2'
 services:
 
   meta_db:
-    image: "postgres:9.6.5-alpine"
+    image: "postgres:11.3-alpine"
     container_name: "meta-db"
     restart: unless-stopped
     environment:
@@ -33,7 +33,7 @@ services:
      - "meta_db:db"
 
   meta_db_check:
-    image: "hbpmip/pgtap:0.96.0-5"
+    image: "hbpmip/pgtap:1.0.0-0"
     container_name: "meta-db-check"
     environment:
       - HOST=db
