@@ -33,7 +33,7 @@ services:
      - "meta_db:db"
 
   meta_db_check:
-    image: "hbpmip/pgtap:1.0.0-1"
+    image: "hbpmip/pgtap:1.0.0-2"
     container_name: "meta-db-check"
     environment:
       - HOST=db
